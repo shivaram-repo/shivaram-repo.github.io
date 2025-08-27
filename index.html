@@ -7,48 +7,67 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
-        
+
         body {
             font-family: 'Inter', sans-serif;
             background: #000;
             color: white;
         }
-        
+
         #myVideo {
-          position: fixed;
-          right: 0;
-          bottom: 0;
-          min-width: 100%;
-          min-height: 100%;
-          z-index: -1;
-          filter: brightness(75%); 
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            filter: brightness(75%);
         }
 
+        /* Fix for mobile background */
+        @media (max-width: 600px) {
+            #myVideo {
+                min-width: auto;
+                min-height: 100%;
+            }
+        }
+        
         .container {
-            backdrop-filter: blur(1px); 
+            backdrop-filter: blur(1px);
             -webkit-backdrop-filter: blur(1px);
         }
+
         .text-yellow-500 {
             color: #f59e0b;
         }
+
         .text-red-600 {
             color: #dc2626;
         }
-        
-        .text-gray-900,
-        .text-gray-600,
-        .text-gray-800,
-        .text-gray-700,
-        .text-gray-500,
-        .text-white {
+
+        .text-gray-900, .text-gray-600, .text-gray-800, .text-gray-700, .text-gray-500, .text-white {
             color: white !important;
         }
-        
-        .bg-white { background-color: transparent !important; }
-        .bg-gray-50 { background-color: transparent !important; }
-        .animate-pulse { background-color: transparent !important; }
-        .shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12); }
-        .text-outline { text-shadow: none; }
+
+        .bg-white {
+            background-color: transparent !important;
+        }
+
+        .bg-gray-50 {
+            background-color: transparent !important;
+        }
+
+        .animate-pulse {
+            background-color: transparent !important;
+        }
+
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2), 0 2px 4px -1px rgba(0, 0, 0, 0.12);
+        }
+
+        .text-outline {
+            text-shadow: none;
+        }
 
         .border-yellow-500 {
             border-color: #f59e0b;
@@ -67,10 +86,9 @@
 </head>
 <body class="p-4 sm:p-8 md:p-12">
     <video autoplay muted loop playsinline id="myVideo">
-      <source src="vdo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
+        <source src="vdo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
     </video>
-
     <div class="container mx-auto px-4 py-8 max-w-4xl bg-transparent backdrop-blur-md rounded-xl shadow-lg border border-white/30 glow-outline">
         <header class="text-center mb-10">
             <h1 class="text-4xl sm:text-5xl font-extrabold leading-tight mb-2 ">
@@ -95,7 +113,6 @@
                 <li><strong class="">💬 Ask me about:</strong> Android app development.</li>
             </ul>
         </section>
-
         <section class="mb-12">
             <h2 class="text-3xl font-bold mb-4 border-b-2 border-yellow-500 pb-2 inline-block ">
                 My Skills
@@ -134,13 +151,11 @@
             <div class="bg-transparent p-6 rounded-lg shadow-md glow-outline">
                 <ul class="list-disc list-inside mt-4 space-y-2">
                     <li>
-                       <strong class="">🔭 Project 1:</strong>
-                       <a href="https://github.com/shivaram-repo/Bank.git" class="hover:underline" target="_blank" rel="noopener noreferrer">A Bank Management System.</a>
+                        <strong class="">🔭 Project 1:</strong> <a href="https://github.com/shivaram-repo/Bank.git" class="hover:underline" target="_blank" rel="noopener noreferrer">A Bank Management System.</a>
                     </li>
                 </ul>
             </div>
         </section>
-
         <section class="text-center mb-8">
             <h2 class="text-3xl font-bold mb-4 border-b-2 border-yellow-500 pb-2 inline-block ">
                 Contact Me
