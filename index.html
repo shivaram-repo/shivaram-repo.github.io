@@ -18,20 +18,13 @@
             position: fixed;
             right: 0;
             bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
+            width: 100%;
+            height: 100%;
             z-index: -1;
             filter: brightness(75%);
+            object-fit: cover;
         }
 
-        /* Fix for mobile background */
-        @media (max-width: 600px) {
-            #myVideo {
-                min-width: auto;
-                min-height: 100%;
-            }
-        }
-        
         .container {
             backdrop-filter: blur(1px);
             -webkit-backdrop-filter: blur(1px);
