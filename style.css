@@ -173,6 +173,10 @@ body {
     color: var(--highlight-color);
 }
 
+.highlight {
+    color: var(--highlight-color);
+}
+
 .home-img {
     position: relative;
     width: 40rem;
