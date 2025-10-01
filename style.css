@@ -343,6 +343,7 @@ body {
 .project-link {
     display: inline-block;
     margin-top: 1.5rem;
+    margin-right: 15px;
     color: var(--highlight-color);
     text-decoration: none;
     font-weight: 600;
