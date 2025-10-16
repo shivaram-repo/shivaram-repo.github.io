@@ -1,6 +1,6 @@
 # My Personal Portfolio
 
-A personal portfolio webpage showcasing my skills and projects, built with a modern design.
+A personal portfolio webpage showcasing my skills and projects.
 
 ---
 
